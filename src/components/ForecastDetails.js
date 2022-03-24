@@ -4,6 +4,7 @@ import moment from "moment";
 
 function ForecastDetails({ forecast }) {
   const { date, temperature, wind, humidity } = forecast;
+
   return (
     <div className="forecast-details">
       <div className="forecast-details__date">
@@ -24,6 +25,7 @@ function ForecastDetails({ forecast }) {
 }
 
 export default ForecastDetails;
+
 ForecastDetails.propTypes = {
   forecast: PropTypes.shape({
     date: PropTypes.number.isRequired,
