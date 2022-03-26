@@ -1,4 +1,3 @@
-/* eslint-disable  no-unused-vars */
 import "../styles/App.css";
 import React, { useState } from "react";
 import PropTypes from "prop-types";
