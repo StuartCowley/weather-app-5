@@ -23,11 +23,28 @@ describe("ForecastSummaries", () => {
       },
     },
   ];
+  const onForecastSelect = () => {};
 
   it("renders correctly", () => {
     // eslint-disable-next-line react/react-in-jsx-scope
-    const { asFragment } = render(<ForecastSummaries forecasts={validProps} />);
+    const { asFragment } = render(
+      <ForecastSummaries
+        forecasts={validProps}
+        onForecastSelect={onForecastSelect}
+      />
+    );
 
     expect(asFragment()).toMatchSnapshot();
+  });
+
+  it("renders the correct number of ForecastSummary instances", () => {
+    const { getAllByTestId } = render(
+      <ForecastSummaries
+        forecasts={validProps}
+        onForecastSelect={onForecastSelect}
+      />
+    );
+
+    expect(getAllByTestId("forecast-summary")).toHaveLength(2);
   });
 });
