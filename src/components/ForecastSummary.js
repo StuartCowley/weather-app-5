@@ -7,7 +7,7 @@ function ForecastSummary(props) {
   const { date, description, icon, temperature, onSelect } = props;
 
   return (
-    <div className="forecast-summary">
+    <div className="forecast-summary" data-testid="forecast-summary">
       <div className="forecast-summary__date">
         {moment(date).format("ddd Do MMM")}
       </div>
