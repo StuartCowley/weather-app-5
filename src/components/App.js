@@ -32,7 +32,7 @@ function App() {
     <div className="weather-app">
       <LocationDetails city={location.city} country={location.country} />
       <SearchForm
-        handleCitySearch={handleCitySearch}
+        onSubmit={handleCitySearch}
         searchText={searchText}
         setSearchText={setSearchText}
       />

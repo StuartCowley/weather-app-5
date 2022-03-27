@@ -11,6 +11,19 @@ exports[`App renders App component correctly 1`] = `
       , 
     </h1>
     <div
+      class="search-form"
+    >
+      <input
+        type="text"
+        value="Manchester"
+      />
+      <button
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
+    <div
       class="forecast-summaries"
     />
   </div>
