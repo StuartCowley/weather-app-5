@@ -10,6 +10,7 @@ exports[`SearchForm renders correctly 1`] = `
       value="Manchester"
     />
     <button
+      data-testid="buttonElement"
       type="submit"
     >
       Search
