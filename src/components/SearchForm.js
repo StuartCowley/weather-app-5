@@ -8,7 +8,7 @@ function SearchForm(props) {
   return (
     <div className="search-form">
       <input type="text" onChange={handleInputChange} value={searchText} />
-      <button type="submit" onClick={onSubmit} data-testid="buttonElement">
+      <button type="submit" onClick={onSubmit}>
         Search
       </button>
     </div>
